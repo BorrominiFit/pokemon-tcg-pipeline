@@ -9,6 +9,7 @@ from __future__ import annotations
 
 import json
 import os
+import re
 from datetime import date, datetime, time, timedelta
 from typing import Any
 
@@ -25,8 +26,18 @@ SCOPES = ["https://www.googleapis.com/auth/calendar.events"]
 class GoogleCalendarPublisher:
     def __init__(self, calendar_id: str = "primary", timezone: str = "Europe/Rome"):
         self.logger = get_logger("google_calendar")
-        # strip difensivo: rimuove eventuali newline/spazi accidentali nei Secret
-        self.calendar_id = (calendar_id or "primary").strip()
+        # Sanitize aggressivo: rimuove QUALSIASI whitespace (newline, spazi, tab)
+        # ovunque nel calendar_id. Gli ID Calendar non contengono whitespace,
+        # quindi questo è safe e gestisce sia trailing che embedded whitespace.
+        raw = calendar_id or "primary"
+        self.calendar_id = re.sub(r"\s+", "", raw)
+        # Debug: log lunghezza ID (senza esporre il valore) per diagnosticare
+        # eventuali caratteri invisibili residui.
+        self.logger.info(
+            "calendar_id pulito: length=%d (originale length=%d)",
+            len(self.calendar_id),
+            len(raw),
+        )
         self.timezone = timezone
         self.service = self._build_service()
 
