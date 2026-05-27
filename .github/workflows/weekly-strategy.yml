@@ -50,12 +50,17 @@ jobs:
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git add data/
-          if ! git diff --cached --quiet; then
-            git commit -m "data: weekly run $(date +'%Y-%m-%d')"
-            git push
-          else
+          if git diff --cached --quiet; then
             echo "Nessuna modifica ai dati."
+            exit 0
           fi
+          git commit -m "data: weekly run $(date +'%Y-%m-%d')"
+          # Retry con rebase fino a 3 volte: se remote è avanti, ci riallineiamo
+          for i in 1 2 3; do
+            git pull --rebase origin main && git push && break
+            echo "Push tentativo $i fallito, retry..."
+            sleep 3
+          done
 
   deploy-pages:
     needs: run-pipeline
