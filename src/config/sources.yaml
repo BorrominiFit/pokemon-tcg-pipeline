@@ -1,0 +1,45 @@
+# Configurazione fonti di scraping
+# Ogni fonte ha: nome modulo (deve esistere in src/scrapers/), URL base, abilitato, timeout
+
+sources:
+  pokebeach:
+    enabled: true
+    module: pokebeach
+    base_url: https://www.pokebeach.com
+    news_path: /news
+    timeout_seconds: 20
+    description: "News set EU/internazionali, leak, conferme uscite"
+
+  pokeguardian:
+    enabled: true
+    module: pokeguardian
+    base_url: https://www.pokeguardian.com
+    news_path: /news
+    timeout_seconds: 20
+    description: "News set giapponesi (utili per anticipo set EU)"
+
+  cardmarket:
+    enabled: true
+    module: cardmarket
+    base_url: https://www.cardmarket.com
+    locale: en
+    timeout_seconds: 25
+    rate_limit_seconds: 4
+    description: "Trend prezzi sigillato EU"
+
+  pokemon_official:
+    enabled: true
+    module: pokemon_official
+    base_url: https://www.pokemon.com
+    locale_path: /it/gioco-di-carte-collezionabili
+    timeout_seconds: 20
+    description: "Conferme ufficiali release EU"
+
+  reddit_pokeinvesting:
+    enabled: true
+    module: reddit_pokeinvesting
+    base_url: https://www.reddit.com
+    subreddit: PokeInvesting
+    top_limit: 30
+    timeout_seconds: 15
+    description: "Sentiment community su prodotti correnti"

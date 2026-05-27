@@ -1,0 +1,94 @@
+name: Weekly Pokémon TCG Strategy
+
+on:
+  schedule:
+    # Lunedì alle 06:00 UTC (≈ 08:00 Europe/Rome con ora legale, 07:00 con ora solare).
+    # Per centrare le 08:00 Europe/Rome tutto l'anno è accettabile questa approssimazione,
+    # o impostane due (06:00 in DST, 07:00 in winter).
+    - cron: "0 6 * * 1"
+  workflow_dispatch: {}  # trigger manuale dalla UI di GitHub
+
+permissions:
+  contents: write       # serve per committare data/
+  pages: write          # per deployare GitHub Pages
+  id-token: write       # per Pages deployment
+
+concurrency:
+  group: weekly-strategy
+  cancel-in-progress: false
+
+jobs:
+  run-pipeline:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+          cache: pip
+
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install -r requirements.txt
+
+      - name: Run pipeline
+        env:
+          GOOGLE_SERVICE_ACCOUNT_JSON: ${{ secrets.GOOGLE_SERVICE_ACCOUNT_JSON }}
+          GOOGLE_CALENDAR_ID: ${{ secrets.GOOGLE_CALENDAR_ID }}
+          DASHBOARD_URL: ${{ secrets.DASHBOARD_URL }}
+          SCRAPER_USER_AGENT: ${{ secrets.SCRAPER_USER_AGENT }}
+          DRY_RUN: "false"
+        run: |
+          python -m src.main
+
+      - name: Commit updated data
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data/
+          if ! git diff --cached --quiet; then
+            git commit -m "data: weekly run $(date +'%Y-%m-%d')"
+            git push
+          else
+            echo "Nessuna modifica ai dati."
+          fi
+
+  deploy-pages:
+    needs: run-pipeline
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - name: Checkout (con il commit del job precedente)
+        uses: actions/checkout@v4
+        with:
+          ref: ${{ github.ref }}
+
+      - name: Prepare site
+        # GitHub Pages servirà l'intera repo: la dashboard è in /dashboard
+        # e legge ../data/latest.json. Per evitare problemi di path,
+        # copiamo dashboard/ in _site/ e linkiamo data/.
+        run: |
+          mkdir -p _site
+          cp -r dashboard/* _site/
+          # rimappa il path ../data → data/
+          sed -i 's|"../data/|"data/|g' _site/app.js
+          mkdir -p _site/data
+          cp -r data/* _site/data/ 2>/dev/null || true
+
+      - name: Setup Pages
+        uses: actions/configure-pages@v4
+
+      - name: Upload artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: _site
+
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4

@@ -1,0 +1,33 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+*.egg-info/
+.pytest_cache/
+.venv/
+venv/
+env/
+
+# Env & credentials
+.env
+.env.local
+credentials.json
+token.json
+service-account*.json
+
+# Cache
+.cache/
+*.log
+
+# OS
+.DS_Store
+Thumbs.db
+
+# IDE
+.vscode/
+.idea/
+
+# Test outputs
+data/*.tmp

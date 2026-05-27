@@ -1,0 +1,50 @@
+# Pesi dei segnali per il calcolo dello score d'investimento.
+# Ogni segnale è normalizzato 0-1 e poi pesato. Somma pesi non deve necessariamente fare 1
+# (lo score finale viene riscalato 0-100).
+#
+# Modifica questi valori per cambiare la sensibilità della strategia.
+# Esempio: se vuoi premiare di più i set con uscita imminente, alza imminence_weight.
+
+signals:
+  # Forza delle carte chase nel set (presenza di Special Illustration Rare, Hyper Rare, alt arts iconiche)
+  chase_strength_weight: 1.5
+
+  # Print run percepito basso / scarsità anticipata
+  scarcity_weight: 1.3
+
+  # Hype community (volume menzioni reddit, engagement)
+  hype_weight: 0.9
+
+  # Comparable historical performance (set passati simili che hanno performato)
+  comparable_trend_weight: 1.2
+
+  # Vicinanza alla data di uscita (preorder window) — più imminente = più opportunità
+  imminence_weight: 1.0
+
+  # Anniversari / eventi (es. 30° anniversario, film, anime season)
+  event_tie_in_weight: 0.8
+
+  # Premium attuale su MSRP. Se è alto può essere segnale di scarsità ma anche di rischio top.
+  # Lo gestiamo come segnale "a campana": basso premium = score più alto per accumulo,
+  # premium troppo alto = score più basso (rischio comprare al top).
+  premium_msrp_weight: 0.7
+
+  # POP report PSA 10 basso = scarsità copie graded top = potenziale upside
+  pop_psa10_scarcity_weight: 0.6
+
+  # Penalità ristampabilità (set facilmente ristampabili come Trainer's Toolkit)
+  reprintability_penalty_weight: -1.0
+
+# Soglie di classificazione raccomandazione finale (score 0-100)
+thresholds:
+  preorder_min_score: 75   # >= 75 → PREORDER (acquisto urgente)
+  accumulate_min_score: 60 # 60-74 → ACCUMULATE (graduale)
+  hold_min_score: 45       # 45-59 → HOLD (osservare)
+  # < 45 → AVOID
+
+# Allocazione % budget settimanale per fascia (suggerita)
+budget_allocation:
+  preorder_pct: 60   # 60% budget settimanale ai PREORDER
+  accumulate_pct: 35
+  hold_pct: 5
+  avoid_pct: 0

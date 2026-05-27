@@ -1,0 +1,157 @@
+{
+  "generated_at": "2026-05-26T20:47:51.667498Z",
+  "iso_week": "2026-W22",
+  "summary": {
+    "preorder_count": 0,
+    "accumulate_count": 0,
+    "hold_count": 0,
+    "avoid_count": 4,
+    "top_action": []
+  },
+  "recommendations": [
+    {
+      "product_id": "prismatic-evolutions-etb",
+      "set_name": "Prismatic Evolutions",
+      "product_type": "etb",
+      "score": 41.2,
+      "category": "AVOID",
+      "rationale": "Driver principali: chase strength +1.35 | comparable trend +1.10 | premium msrp +0.35.",
+      "budget_allocation_pct": 0.0,
+      "breakdown": {
+        "chase_strength": 1.35,
+        "scarcity": 0.0,
+        "hype": 0.27,
+        "comparable_trend": 1.1,
+        "imminence": 0.1,
+        "event_tie_in": 0.24,
+        "premium_msrp": 0.35,
+        "pop_psa10_scarcity": 0.3,
+        "reprintability_penalty": -0.0
+      },
+      "metadata": {
+        "chase_cards": [
+          "Umbreon ex SIR",
+          "Sylveon ex SIR"
+        ],
+        "comparable_sets": [
+          "Hidden Fates",
+          "Shining Fates",
+          "Crown Zenith"
+        ],
+        "release_date": "2025-01-17",
+        "msrp_eur": 59.99,
+        "current_price_eur": null,
+        "premium_over_msrp_pct": null,
+        "category": "AVOID"
+      }
+    },
+    {
+      "product_id": "prismatic-evolutions-booster-bundle",
+      "set_name": "Prismatic Evolutions",
+      "product_type": "booster_bundle",
+      "score": 36.2,
+      "category": "AVOID",
+      "rationale": "Driver principali: comparable trend +1.02 | chase strength +0.97 | premium msrp +0.35.",
+      "budget_allocation_pct": 0.0,
+      "breakdown": {
+        "chase_strength": 0.975,
+        "scarcity": 0.0,
+        "hype": 0.27,
+        "comparable_trend": 1.02,
+        "imminence": 0.1,
+        "event_tie_in": 0.24,
+        "premium_msrp": 0.35,
+        "pop_psa10_scarcity": 0.3,
+        "reprintability_penalty": -0.0
+      },
+      "metadata": {
+        "chase_cards": [
+          "Umbreon ex SIR"
+        ],
+        "comparable_sets": [
+          "Crown Zenith Booster Bundle"
+        ],
+        "release_date": "2025-01-17",
+        "msrp_eur": 29.99,
+        "current_price_eur": null,
+        "premium_over_msrp_pct": null,
+        "category": "AVOID"
+      }
+    },
+    {
+      "product_id": "journey-together-booster-box",
+      "set_name": "Journey Together",
+      "product_type": "booster_box",
+      "score": 36.0,
+      "category": "AVOID",
+      "rationale": "Driver principali: chase strength +1.20 | comparable trend +0.78 | premium msrp +0.35.",
+      "budget_allocation_pct": 0.0,
+      "breakdown": {
+        "chase_strength": 1.2,
+        "scarcity": 0.0,
+        "hype": 0.27,
+        "comparable_trend": 0.78,
+        "imminence": 0.1,
+        "event_tie_in": 0.24,
+        "premium_msrp": 0.35,
+        "pop_psa10_scarcity": 0.3,
+        "reprintability_penalty": -0.0
+      },
+      "metadata": {
+        "chase_cards": [
+          "N's Zoroark ex",
+          "N's Reshiram"
+        ],
+        "comparable_sets": [
+          "Surging Sparks",
+          "Stellar Crown"
+        ],
+        "release_date": "2025-03-28",
+        "msrp_eur": 159.99,
+        "current_price_eur": null,
+        "premium_over_msrp_pct": null,
+        "category": "AVOID"
+      }
+    },
+    {
+      "product_id": "destined-rivals-booster-box",
+      "set_name": "Destined Rivals",
+      "product_type": "booster_box",
+      "score": 34.5,
+      "category": "AVOID",
+      "rationale": "Driver principali: comparable trend +1.02 | chase strength +0.82 | premium msrp +0.35.",
+      "budget_allocation_pct": 0.0,
+      "breakdown": {
+        "chase_strength": 0.825,
+        "scarcity": 0.0,
+        "hype": 0.27,
+        "comparable_trend": 1.02,
+        "imminence": 0.1,
+        "event_tie_in": 0.24,
+        "premium_msrp": 0.35,
+        "pop_psa10_scarcity": 0.3,
+        "reprintability_penalty": -0.0
+      },
+      "metadata": {
+        "chase_cards": [
+          "Team Rocket trainer arts"
+        ],
+        "comparable_sets": [
+          "Paldean Fates"
+        ],
+        "release_date": "2025-05-30",
+        "msrp_eur": 159.99,
+        "current_price_eur": null,
+        "premium_over_msrp_pct": null,
+        "category": "AVOID"
+      }
+    }
+  ],
+  "run_metadata": {
+    "generated_at": "2026-05-26T20:47:51.667498Z",
+    "iso_week": "2026-W22",
+    "n_raw_signals": 0,
+    "n_products": 4,
+    "dry_run": true
+  }
+}

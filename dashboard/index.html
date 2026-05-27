@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Pokémon TCG Weekly Strategy</title>
+  <link rel="stylesheet" href="https://unpkg.com/gridjs/dist/theme/mermaid.min.css" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="hero">
+    <div class="hero-inner">
+      <h1>Pokémon TCG <span>Weekly Strategy</span></h1>
+      <p id="generated-at" class="subtitle">caricamento…</p>
+      <div class="summary-chips" id="summary-chips"></div>
+    </div>
+  </header>
+
+  <section class="top-actions">
+    <h2>🎯 Top 3 azioni della settimana</h2>
+    <div id="top-actions" class="cards"></div>
+  </section>
+
+  <section class="filters">
+    <label>Categoria:
+      <select id="filter-category">
+        <option value="">Tutte</option>
+        <option value="PREORDER">PREORDER</option>
+        <option value="ACCUMULATE">ACCUMULATE</option>
+        <option value="HOLD">HOLD</option>
+        <option value="AVOID">AVOID</option>
+      </select>
+    </label>
+    <label>Tipo prodotto:
+      <select id="filter-type">
+        <option value="">Tutti</option>
+        <option value="booster_box">Booster Box</option>
+        <option value="booster_bundle">Booster Bundle</option>
+        <option value="etb">ETB</option>
+        <option value="special_set">Special Set</option>
+        <option value="collection_box">Collection Box</option>
+        <option value="premium_collection">Premium Collection</option>
+      </select>
+    </label>
+  </section>
+
+  <section class="table-section">
+    <h2>📊 Prodotti monitorati</h2>
+    <div id="rec-table"></div>
+  </section>
+
+  <section class="chart-section">
+    <h2>📈 Trend score storico</h2>
+    <p class="muted">Aggregato delle ultime settimane (calcolato dalle snapshot in <code>data/history/</code>).</p>
+    <canvas id="trend-chart" height="120"></canvas>
+  </section>
+
+  <footer>
+    <p>Generato automaticamente da GitHub Actions ogni lunedì.
+       Codice e config: <a id="repo-link" href="#">repository</a>.</p>
+  </footer>
+
+  <script src="https://unpkg.com/gridjs/dist/gridjs.umd.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.0/dist/chart.umd.min.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>

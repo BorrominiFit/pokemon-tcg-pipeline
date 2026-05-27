@@ -1,0 +1,64 @@
+# Lista prodotti monitorati e parametri statici.
+# Aggiungi/rimuovi prodotti modificando questo file — la pipeline li raccoglierà al prossimo run.
+#
+# Campi:
+#   id            : slug univoco
+#   set_name      : nome ufficiale set
+#   product_type  : booster_box | booster_bundle | etb | special_set | collection_box | premium_collection
+#   region        : EU | US | JP
+#   language      : en | it | de | fr | jp
+#   release_date  : YYYY-MM-DD (se annunciata, altrimenti vuoto)
+#   msrp_eur      : prezzo retail consigliato in euro (se noto)
+#   cardmarket_url: URL pagina prodotto Cardmarket (se nota)
+#   comparable_sets: lista di set storici per confronto trend
+#   chase_cards   : carte chase principali del set
+#   notes         : note operative
+
+products:
+  - id: prismatic-evolutions-etb
+    set_name: Prismatic Evolutions
+    product_type: etb
+    region: EU
+    language: en
+    release_date: "2025-01-17"
+    msrp_eur: 59.99
+    cardmarket_url: "https://www.cardmarket.com/en/Pokemon/Products/Booster-Boxes/Scarlet-Violet-Prismatic-Evolutions-Elite-Trainer-Box"
+    comparable_sets: ["Hidden Fates", "Shining Fates", "Crown Zenith"]
+    chase_cards: ["Umbreon ex SIR", "Sylveon ex SIR"]
+    notes: "Set special, allocazione Eevee evolutions. Storicamente forti."
+
+  - id: prismatic-evolutions-booster-bundle
+    set_name: Prismatic Evolutions
+    product_type: booster_bundle
+    region: EU
+    language: en
+    release_date: "2025-01-17"
+    msrp_eur: 29.99
+    cardmarket_url: ""
+    comparable_sets: ["Crown Zenith Booster Bundle"]
+    chase_cards: ["Umbreon ex SIR"]
+    notes: ""
+
+  - id: journey-together-booster-box
+    set_name: Journey Together
+    product_type: booster_box
+    region: EU
+    language: en
+    release_date: "2025-03-28"
+    msrp_eur: 159.99
+    cardmarket_url: ""
+    comparable_sets: ["Surging Sparks", "Stellar Crown"]
+    chase_cards: ["N's Zoroark ex", "N's Reshiram"]
+    notes: "Primo set con trainer-themed mechanic"
+
+  - id: destined-rivals-booster-box
+    set_name: Destined Rivals
+    product_type: booster_box
+    region: EU
+    language: en
+    release_date: "2025-05-30"
+    msrp_eur: 159.99
+    cardmarket_url: ""
+    comparable_sets: ["Paldean Fates"]
+    chase_cards: ["Team Rocket trainer arts"]
+    notes: "Team Rocket reborn, hype community alto"
