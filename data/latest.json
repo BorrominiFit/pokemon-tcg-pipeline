@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-05-27T09:39:30.226249Z",
+  "generated_at": "2026-05-27T10:00:26.092853Z",
   "iso_week": "2026-W22",
   "summary": {
     "preorder_count": 0,
@@ -148,7 +148,7 @@
     }
   ],
   "run_metadata": {
-    "generated_at": "2026-05-27T09:39:30.226249Z",
+    "generated_at": "2026-05-27T10:00:26.092853Z",
     "iso_week": "2026-W22",
     "n_raw_signals": 25,
     "n_products": 4,
