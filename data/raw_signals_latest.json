@@ -1,1 +1,325 @@
-[]
+[
+  {
+    "source": "pokebeach",
+    "signal_type": "news",
+    "set_name": null,
+    "product_id": null,
+    "title": "News, News, and More News",
+    "url": "https://www.pokebeach.com/author/admin",
+    "date": null,
+    "raw_text": "News, News, and More News",
+    "metadata": {}
+  },
+  {
+    "source": "pokeguardian",
+    "signal_type": "jp_news",
+    "set_name": null,
+    "product_id": null,
+    "title": "Pokemon Fossil Museum Archeops Promo Card Revealed",
+    "url": "https://www.pokeguardian.com/3183968_pokemon-fossil-museum-archeops-promo-card-revealed",
+    "date": null,
+    "raw_text": "Pokemon Fossil Museum Archeops Promo Card Revealed",
+    "metadata": {
+      "region_hint": "JP"
+    }
+  },
+  {
+    "source": "pokeguardian",
+    "signal_type": "jp_news",
+    "set_name": null,
+    "product_id": null,
+    "title": "First Partner Illustration Collection - Series 3 Revealed",
+    "url": "https://www.pokeguardian.com/3182523_first-partner-illustration-collection-series-3-revealed",
+    "date": null,
+    "raw_text": "First Partner Illustration Collection - Series 3 Revealed",
+    "metadata": {
+      "region_hint": "JP"
+    }
+  },
+  {
+    "source": "pokeguardian",
+    "signal_type": "jp_news",
+    "set_name": null,
+    "product_id": null,
+    "title": "Mega Evolution - Chaos Rising Full Digital Set List Revealed",
+    "url": "https://www.pokeguardian.com/3172159_mega-evolution-chaos-rising-full-digital-set-list-revealed",
+    "date": null,
+    "raw_text": "Mega Evolution - Chaos Rising Full Digital Set List Revealed",
+    "metadata": {
+      "region_hint": "JP"
+    }
+  },
+  {
+    "source": "pokeguardian",
+    "signal_type": "jp_news",
+    "set_name": null,
+    "product_id": null,
+    "title": "Pokemon Card Game May 2026 Merchandise Revealed",
+    "url": "https://www.pokeguardian.com/3168887_pokemon-card-game-may-2026-merchandise-revealed",
+    "date": null,
+    "raw_text": "Pokemon Card Game May 2026 Merchandise Revealed",
+    "metadata": {
+      "region_hint": "JP"
+    }
+  },
+  {
+    "source": "pokeguardian",
+    "signal_type": "jp_news",
+    "set_name": null,
+    "product_id": null,
+    "title": "Ho-Oh, Keldeo & Delphox Chaos Rising Store Promos Revealed",
+    "url": "https://www.pokeguardian.com/3158713_ho-oh-keldeo-delphox-chaos-rising-store-promos-revealed",
+    "date": null,
+    "raw_text": "Ho-Oh, Keldeo & Delphox Chaos Rising Store Promos Revealed",
+    "metadata": {
+      "region_hint": "JP"
+    }
+  },
+  {
+    "source": "pokeguardian",
+    "signal_type": "jp_news",
+    "set_name": null,
+    "product_id": null,
+    "title": "Mega Evolution - Pitch Black Officially Revealed",
+    "url": "https://www.pokeguardian.com/3144089_mega-evolution-pitch-black-officially-revealed",
+    "date": null,
+    "raw_text": "Mega Evolution - Pitch Black Officially Revealed",
+    "metadata": {
+      "region_hint": "JP"
+    }
+  },
+  {
+    "source": "pokeguardian",
+    "signal_type": "jp_news",
+    "set_name": null,
+    "product_id": null,
+    "title": "MEGA Expansion Pack Abyss Eye Revealed",
+    "url": "https://www.pokeguardian.com/3123640_mega-expansion-pack-abyss-eye-revealed",
+    "date": null,
+    "raw_text": "MEGA Expansion Pack Abyss Eye Revealed",
+    "metadata": {
+      "region_hint": "JP"
+    }
+  },
+  {
+    "source": "pokeguardian",
+    "signal_type": "jp_news",
+    "set_name": null,
+    "product_id": null,
+    "title": "New 4th MEGA Pokemon Card Gym Promo Cards Revealed, Features Mega Delphox ex",
+    "url": "https://www.pokeguardian.com/3124043_new-4th-mega-pokemon-card-gym-promo-cards-revealed-features-mega-delphox-ex",
+    "date": null,
+    "raw_text": "New 4th MEGA Pokemon Card Gym Promo Cards Revealed, Features Mega Delphox ex",
+    "metadata": {
+      "region_hint": "JP"
+    }
+  },
+  {
+    "source": "pokeguardian",
+    "signal_type": "jp_news",
+    "set_name": null,
+    "product_id": null,
+    "title": "Mega Greninja ex Premium Collection Revealed",
+    "url": "https://www.pokeguardian.com/3123364_mega-greninja-ex-premium-collection-revealed",
+    "date": null,
+    "raw_text": "Mega Greninja ex Premium Collection Revealed",
+    "metadata": {
+      "region_hint": "JP"
+    }
+  },
+  {
+    "source": "pokeguardian",
+    "signal_type": "jp_news",
+    "set_name": null,
+    "product_id": null,
+    "title": "First Partner Illustration Collection - Series 2 Revealed",
+    "url": "https://www.pokeguardian.com/3100471_first-partner-illustration-collection-series-2-revealed",
+    "date": null,
+    "raw_text": "First Partner Illustration Collection - Series 2 Revealed",
+    "metadata": {
+      "region_hint": "JP"
+    }
+  },
+  {
+    "source": "pokeguardian",
+    "signal_type": "jp_news",
+    "set_name": null,
+    "product_id": null,
+    "title": "Rumour: 'MEGA Expansion Pack 30th CELEBRATION' Set for Release in September 2026",
+    "url": "https://www.pokeguardian.com/3097889_rumour-mega-expansion-pack-30th-celebration-set-for-release-in-september-2026",
+    "date": null,
+    "raw_text": "Rumour: 'MEGA Expansion Pack 30th CELEBRATION' Set for Release in September 2026",
+    "metadata": {
+      "region_hint": "JP"
+    }
+  },
+  {
+    "source": "pokeguardian",
+    "signal_type": "jp_news",
+    "set_name": null,
+    "product_id": null,
+    "title": "Mega Evolution - Perfect Order Full Digital Set List Revealed",
+    "url": "https://www.pokeguardian.com/3087157_mega-evolution-perfect-order-full-digital-set-list-revealed",
+    "date": null,
+    "raw_text": "Mega Evolution - Perfect Order Full Digital Set List Revealed",
+    "metadata": {
+      "region_hint": "JP"
+    }
+  },
+  {
+    "source": "pokeguardian",
+    "signal_type": "jp_news",
+    "set_name": null,
+    "product_id": null,
+    "title": "M5 Abyss Eye All SR/AR/SAR/MUR Cards",
+    "url": "https://www.pokeguardian.com/sets/set-lists/japanese-sets/3160394_m5-abyss-eye-all-sr-ar-sar-mur-cards",
+    "date": null,
+    "raw_text": "M5 Abyss Eye All SR/AR/SAR/MUR Cards",
+    "metadata": {
+      "region_hint": "JP"
+    }
+  },
+  {
+    "source": "pokeguardian",
+    "signal_type": "jp_news",
+    "set_name": null,
+    "product_id": null,
+    "title": "M5 Abyss Eye Main Set List",
+    "url": "https://www.pokeguardian.com/sets/set-lists/japanese-sets/3132093_m5-abyss-eye-main-set-list",
+    "date": null,
+    "raw_text": "M5 Abyss Eye Main Set List",
+    "metadata": {
+      "region_hint": "JP"
+    }
+  },
+  {
+    "source": "pokeguardian",
+    "signal_type": "jp_news",
+    "set_name": null,
+    "product_id": null,
+    "title": "M4 Ninja Spinner All SR/AR/SAR/MUR Cards",
+    "url": "https://www.pokeguardian.com/sets/set-lists/japanese-sets/3018155_m4-ninja-spinner-all-sr-ar-sar-mur-cards",
+    "date": null,
+    "raw_text": "M4 Ninja Spinner All SR/AR/SAR/MUR Cards",
+    "metadata": {
+      "region_hint": "JP"
+    }
+  },
+  {
+    "source": "pokeguardian",
+    "signal_type": "jp_news",
+    "set_name": null,
+    "product_id": null,
+    "title": "M4 Ninja Spinner Main Set List",
+    "url": "https://www.pokeguardian.com/sets/set-lists/japanese-sets/3012129_m4-ninja-spinner-main-set-list",
+    "date": null,
+    "raw_text": "M4 Ninja Spinner Main Set List",
+    "metadata": {
+      "region_hint": "JP"
+    }
+  },
+  {
+    "source": "pokeguardian",
+    "signal_type": "jp_news",
+    "set_name": null,
+    "product_id": null,
+    "title": "M3 Nihil Zero All SR/AR/SAR/MUR Cards",
+    "url": "https://www.pokeguardian.com/sets/set-lists/japanese-sets/2916284_m3-nihil-zero-all-sr-ar-sar-mur-cards",
+    "date": null,
+    "raw_text": "M3 Nihil Zero All SR/AR/SAR/MUR Cards",
+    "metadata": {
+      "region_hint": "JP"
+    }
+  },
+  {
+    "source": "pokeguardian",
+    "signal_type": "jp_news",
+    "set_name": null,
+    "product_id": null,
+    "title": "M3 Nihil Zero Main Set List",
+    "url": "https://www.pokeguardian.com/sets/set-lists/japanese-sets/2914213_m3-nihil-zero-main-set-list",
+    "date": null,
+    "raw_text": "M3 Nihil Zero Main Set List",
+    "metadata": {
+      "region_hint": "JP"
+    }
+  },
+  {
+    "source": "pokeguardian",
+    "signal_type": "jp_news",
+    "set_name": null,
+    "product_id": null,
+    "title": "Start Deck 100 Battle Collection All AR / SR / SAR / MUR Cards",
+    "url": "https://www.pokeguardian.com/sets/set-lists/japanese-sets/2889900_start-deck-100-battle-collection-all-ar-sr-sar-mur-cards",
+    "date": null,
+    "raw_text": "Start Deck 100 Battle Collection All AR / SR / SAR / MUR Cards",
+    "metadata": {
+      "region_hint": "JP"
+    }
+  },
+  {
+    "source": "pokeguardian",
+    "signal_type": "jp_news",
+    "set_name": null,
+    "product_id": null,
+    "title": "M2a Mega Dream ex All AR/SR/MA/SAR/MUR Cards",
+    "url": "https://www.pokeguardian.com/sets/set-lists/japanese-sets/2819645_m2a-mega-dream-ex-all-ar-sr-ma-sar-mur-cards",
+    "date": null,
+    "raw_text": "M2a Mega Dream ex All AR/SR/MA/SAR/MUR Cards",
+    "metadata": {
+      "region_hint": "JP"
+    }
+  },
+  {
+    "source": "pokeguardian",
+    "signal_type": "jp_news",
+    "set_name": null,
+    "product_id": null,
+    "title": "M2a Mega Dream ex Main Set List",
+    "url": "https://www.pokeguardian.com/sets/set-lists/japanese-sets/2819640_m2a-mega-dream-ex-main-set-list",
+    "date": null,
+    "raw_text": "M2a Mega Dream ex Main Set List",
+    "metadata": {
+      "region_hint": "JP"
+    }
+  },
+  {
+    "source": "pokeguardian",
+    "signal_type": "jp_news",
+    "set_name": null,
+    "product_id": null,
+    "title": "M2 Inferno X All SR/AR/SAR/MUR Cards",
+    "url": "https://www.pokeguardian.com/sets/set-lists/japanese-sets/2687383_m2-inferno-x-all-sr-ar-sar-mur-cards",
+    "date": null,
+    "raw_text": "M2 Inferno X All SR/AR/SAR/MUR Cards",
+    "metadata": {
+      "region_hint": "JP"
+    }
+  },
+  {
+    "source": "pokeguardian",
+    "signal_type": "jp_news",
+    "set_name": null,
+    "product_id": null,
+    "title": "M2 Inferno X Main Set List",
+    "url": "https://www.pokeguardian.com/sets/set-lists/japanese-sets/2687384_m2-inferno-x-main-set-list",
+    "date": null,
+    "raw_text": "M2 Inferno X Main Set List",
+    "metadata": {
+      "region_hint": "JP"
+    }
+  },
+  {
+    "source": "pokeguardian",
+    "signal_type": "jp_news",
+    "set_name": null,
+    "product_id": null,
+    "title": "M1L Mega Brave / M1S Mega Symphonia All SR/AR/SAR/MUR Cards",
+    "url": "https://www.pokeguardian.com/sets/set-lists/japanese-sets/2596657_m1l-mega-brave-m1s-mega-symphonia-all-sr-ar-sar-mur-cards",
+    "date": null,
+    "raw_text": "M1L Mega Brave / M1S Mega Symphonia All SR/AR/SAR/MUR Cards",
+    "metadata": {
+      "region_hint": "JP"
+    }
+  }
+]
