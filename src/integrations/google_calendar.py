@@ -25,7 +25,8 @@ SCOPES = ["https://www.googleapis.com/auth/calendar.events"]
 class GoogleCalendarPublisher:
     def __init__(self, calendar_id: str = "primary", timezone: str = "Europe/Rome"):
         self.logger = get_logger("google_calendar")
-        self.calendar_id = calendar_id
+        # strip difensivo: rimuove eventuali newline/spazi accidentali nei Secret
+        self.calendar_id = (calendar_id or "primary").strip()
         self.timezone = timezone
         self.service = self._build_service()
 

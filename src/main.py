@@ -122,8 +122,10 @@ def run(dry_run: bool = False) -> dict[str, Any]:
 
     from src.integrations.google_calendar import GoogleCalendarPublisher
 
-    dashboard_url = os.environ.get("DASHBOARD_URL", "https://example.github.io/")
-    calendar_id = os.environ.get("GOOGLE_CALENDAR_ID", "primary")
+    # .strip() difensivo: i Secret di GitHub a volte includono trailing newline
+    # quando si incolla un valore da una pagina web.
+    dashboard_url = os.environ.get("DASHBOARD_URL", "https://example.github.io/").strip()
+    calendar_id = os.environ.get("GOOGLE_CALENDAR_ID", "primary").strip()
 
     # Top 3 azioni per il body
     top_actions = [
