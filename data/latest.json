@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-10-05T12:50:51.569402Z",
-  "iso_week": "2026-W41",
+  "generated_at": "2026-10-12T13:42:29.930145Z",
+  "iso_week": "2026-W42",
   "summary": {
     "preorder_count": 0,
     "accumulate_count": 0,
@@ -148,8 +148,8 @@
     }
   ],
   "run_metadata": {
-    "generated_at": "2026-10-05T12:50:51.569402Z",
-    "iso_week": "2026-W41",
+    "generated_at": "2026-10-12T13:42:29.930145Z",
+    "iso_week": "2026-W42",
     "n_raw_signals": 1,
     "n_products": 4,
     "dry_run": false
